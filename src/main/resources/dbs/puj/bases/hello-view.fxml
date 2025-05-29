@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="dbs.puj.bases.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<StackPane prefHeight="224.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbs.puj.bases.HelloController">    <VBox alignment="CENTER" maxWidth="151.0" prefHeight="224.0" prefWidth="188.0" spacing="15.0">        <Label fx:id="txtAnuncios" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="14.0" prefHeight="17.0" prefWidth="149.0" textAlignment="CENTER" />        <Label alignment="CENTER" layoutX="89.0" layoutY="42.0" text="Ingrese su usuario" textAlignment="CENTER" />        <TextField fx:id="txtUsuarioIngresar" alignment="CENTER" layoutX="63.0" layoutY="68.0" />        <Label alignment="CENTER" layoutX="80.0" layoutY="117.0" prefHeight="17.0" prefWidth="130.0" text="Ingrese su contraseña" />        <PasswordField fx:id="txtContrasenaIngresar" alignment="CENTER" onAction="#onClickIngresar" />        <Button fx:id="btnIngresar" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="210.0" onAction="#onClickIngresar" text="Ingresar" />    </VBox></StackPane>
